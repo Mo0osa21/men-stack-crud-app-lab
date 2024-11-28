@@ -3,17 +3,17 @@
 
   <form action="/cars/<%= car._id %>?_method=put" method="post">
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name" />
+    <input type="text" name="name" id="name" value="<%= car.name %>"/>
 
     <br />
 
     <label for="description">Description:</label>
-    <input type="text" name="description" id="description" />
+    <input type="text" name="description" id="description" value="<%= car.description %>"/>
 
     <br />
 
     <label for="image">Img:</label>
-    <input type="text" name="image" id="image" />
+    <input type="text" name="image" id="image" accept="image/*" value="<%= car.image %>"/>
 
     <br />
 
